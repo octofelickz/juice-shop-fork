@@ -38,6 +38,8 @@ jobs:
           npm install --ignore-scripts
           cd frontend
           npm install --ignore-scripts --legacy-peer-deps
+      - name: Component Detection snapshot submission
+        uses: advanced-security/component-detection-dependency-submission-action@5a8ce4ad8c6fbb9b88f66f672014e44b427d7d54          
       - name: "Lint source code"
         run: npm run lint
       - name: "Lint customization configs"
